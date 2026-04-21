@@ -87,10 +87,11 @@
   });
 
   // Gallery Filter
-  var Container = $('.container');
+  var Container = $('.gallery-list');
   Container.imagesLoaded(function () {
     var portfolio = $('.gallery-menu');
-    portfolio.on('click', 'button', function () {
+    portfolio.on('click', 'a', function (e) {
+      e.preventDefault();
       $(this).addClass('active').siblings().removeClass('active');
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({

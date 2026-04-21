@@ -219,18 +219,10 @@
             <div class="gallery-menu row">
                 <div class="col-md-12">
                     <div class="button-group filter-button-group text-left">
-                        <a data-filter="*" href="#" type="button">Все</a>
-                        <a data-filter=".basov" href="https://vk.com/album-224850454_300133102" type="button"
-                            target="_blank">Глеб Басов</a>
-                        <a data-filter=".koscheev" href="https://vk.com/album-224850454_301611700" type="button"
-                            target="_blank">Артём
-                            Кощеев</a>
-                        <a data-filter=".evlaxova" href="https://vk.com/album-224850454_300421511" type="button"
-                            target="_blank">Милена
-                            Евлахова</a>
-                        <a data-filter=".blohov" href="https://vk.com/album-224850454_301988193" type="button"
-                            target="_blank">Артём
-                            Блохов</a>
+                        <a data-filter=".basov" href="#" type="button">Глеб Басов</a>
+                        <a data-filter=".koscheev" href="#" type="button">Артём Кощеев</a>
+                        <a data-filter=".evlaxova" href="#" type="button">Милена Евлахова</a>
+                        <a data-filter=".blohov" href="#" type="button">Артём Блохов</a>
                     </div>
                 </div>
             </div>
@@ -597,19 +589,20 @@
             </div><!-- end container -->
         </div><!-- end section -->
 
+        <section id="vk_groups" class="section lb">
+            <div class="container">
+                <div class="section-title text-left">
+                    <h3>Блог</h3>
+                </div>
+                <div class="vk_groups" id="vk_groups_widget"></div>
+            </div>
+        </section>
         <script type="text/javascript">
             VK.init({
                 apiId: 134219,
                 onlyWidgets: true
             });
-        </script>
-        <!-- Put this script tag to the <head> of your page -->
-        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-
-        <!-- Put this div tag to the place, where the Group block will be -->
-        <div class="vk_groups" id="vk_groups"></div>
-        <script type="text/javascript">
-            VK.Widgets.Group("vk_groups", { mode: 4, wide: 1, width: 1000, height: 600, color1: "FFFFFF", color2: "000000", color3: "5181B8" }, 224850454);
+            VK.Widgets.Group("vk_groups_widget", { mode: 4, wide: 1, width: 1000, height: 600, color1: "FFFFFF", color2: "000000", color3: "5181B8" }, 224850454);
         </script>
 
         <div class="copyrights">
